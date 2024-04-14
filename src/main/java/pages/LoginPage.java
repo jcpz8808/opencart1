@@ -18,6 +18,16 @@ public class LoginPage extends BasePage{
    /* Given the user and password when the user complete the form
       and clic into login then open my account page
     */
+
+    public boolean LoginEmailComponentVisible(){
+        return webDriver.findElement(emailInput).isDisplayed();
+    }
+    public boolean LoginPasswordComponentVisible(){
+        return webDriver.findElement(passwordInput).isDisplayed();
+    }
+    public boolean LoginSubmitComponentVisible(){
+        return webDriver.findElement(loginSubmit).isDisplayed();
+    }
    public String loginCustomer(String user, String pass){
        webDriver.findElement(emailInput).sendKeys(user);
        webDriver.findElement(passwordInput).sendKeys(pass);

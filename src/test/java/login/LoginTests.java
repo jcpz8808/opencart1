@@ -121,4 +121,19 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(loginPage.loginCustomer("jcpz8po808@gmail.comlo", "1263456"), "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.", "Error in the expected message for wrong login");
         loginPage.takeScreenShot("test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes");
     }
+
+    /* Test case 07: Login incorrectly multiple times(Negative test case)
+     * Given the customer email and the wrong password when the user complete de login form and clic en login then get
+     * an error message telling "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.".
+     * */
+
+    @Test(priority = 0, suiteName = "Smoke")
+    public void test08AllLoginComponentsAreVisible(){
+
+        LoginPage loginPage = new LoginPage(webDriver);
+        Assert.assertEquals(loginPage.LoginEmailComponentVisible(), true, "Error in the email component is not visible");
+        Assert.assertEquals(loginPage.LoginPasswordComponentVisible(), true, "Error in the password component is not visible");
+        Assert.assertEquals(loginPage.LoginSubmitComponentVisible(), true, "Error in the login submit button component is not visible");
+        loginPage.takeScreenShot("test08AllLoginComponentsAreVisible");
+    }
 }
