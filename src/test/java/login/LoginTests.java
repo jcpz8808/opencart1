@@ -26,7 +26,8 @@ public class LoginTests extends BaseTest {
 
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertEquals(loginPage.loginCustomer("jcpz8808@gmail.com", "password"), "Login successfully", "Error: the login failed");
-    }
+        loginPage.takeScreenShot("test01LoginCustomerSuccessfully");
+   }
 
     /* Test case 02: Try to navegate after the customer had logged out (Negative test case)
      * Given the customer is logged in when the customer logout and try to navegate to another link then get
@@ -51,6 +52,7 @@ public class LoginTests extends BaseTest {
 
         // Then the user must be sent to the login page
         Assert.assertEquals(webDriver.getCurrentUrl().toString(), "https://opencart.abstracta.us/index.php?route=account/login", "Error, the user can navegate even after logout");
+        loginPage.takeScreenShot("test02ExpectedLoginPageWhenBrowserBackButtonAfterLogout");
     }
 
     /* Test case 03: Login incorrectly, invalid password (Negative test case)
@@ -63,6 +65,7 @@ public class LoginTests extends BaseTest {
 
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertEquals(loginPage.loginCustomer("jcpz8808@gmail.comlo", "123456"), "Warning: No match for E-Mail Address and/or Password.", "Error in the expected message for wrong login");
+        loginPage.takeScreenShot("test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword");
     }
 
     /* Test case 04: Login incorrectly, invalid username (Negative test case)
@@ -75,6 +78,7 @@ public class LoginTests extends BaseTest {
 
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertEquals(loginPage.loginCustomer("jcpz8808658@gmail.comlo", "password"), "Warning: No match for E-Mail Address and/or Password.", "Error in the expected message for wrong login");
+        loginPage.takeScreenShot("test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername");
     }
 
     /* Test case 05: Login incorrectly, empty username (Negative test case)
@@ -87,6 +91,7 @@ public class LoginTests extends BaseTest {
 
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertEquals(loginPage.loginCustomer("", "password"), "Warning: No match for E-Mail Address and/or Password.", "Error in the expected message for wrong login");
+        loginPage.takeScreenShot("test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername");
     }
 
     /* Test case 06: Login incorrectly, empty password (Negative test case)
@@ -99,6 +104,7 @@ public class LoginTests extends BaseTest {
 
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertEquals(loginPage.loginCustomer("jcpz8808@gmail.com", ""), "Warning: No match for E-Mail Address and/or Password.", "Error in the expected message for wrong login");
+        loginPage.takeScreenShot("test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword");
     }
 
 
@@ -110,7 +116,8 @@ public class LoginTests extends BaseTest {
     @Test(priority = 7)
     public void test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes(){
 
-        LoginPage loginPage = new LoginPage(webDriver);
+        LoginPage loginPage = new LoginPage(webDriver);+++
         Assert.assertEquals(loginPage.loginCustomer("jcpz8po808@gmail.comlo", "1263456"), "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.", "Error in the expected message for wrong login");
+        loginPage.takeScreenShot("test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes");
     }
 }

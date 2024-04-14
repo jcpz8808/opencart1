@@ -20,7 +20,7 @@ public abstract class BasePage {
     public String takeScreenShot(String imageName){
         TakesScreenshot takesScreenshot = (TakesScreenshot) webDriver;
         File screenshot = takesScreenshot.getScreenshotAs(OutputType.FILE);
-        String imagePath = "resources/screenshots/" + imageName + ". png";
+        String imagePath = "resources/screenshot/" + imageName + ".png";
 
         try {
             Files.move(screenshot, new File(imagePath));
