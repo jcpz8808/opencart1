@@ -1,6 +1,7 @@
 package login;
 
 import base.BaseTest;
+import org.junit.experimental.categories.Category;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
@@ -21,7 +22,7 @@ public class LoginTests extends BaseTest {
     * Given the customer email and password when the user complete correctly de login form then get to My account page
     * */
 
-   @Test(priority = 1)
+   @Test(priority = 1, suiteName = "Regression")
     public void test01LoginCustomerSuccessfully(){
 
         LoginPage loginPage = new LoginPage(webDriver);
@@ -34,7 +35,7 @@ public class LoginTests extends BaseTest {
      * redirected to the log in page.
      * */
 
-    @Test(priority = 2)
+    @Test(priority = 2, suiteName = "Regression")
     public void test02ExpectedLoginPageWhenBrowserBackButtonAfterLogout(){
 
         //Given the customer is logged
@@ -60,7 +61,7 @@ public class LoginTests extends BaseTest {
      * an error message telling "Warning: No match for E-Mail Address and/or Password".
      * */
 
-    @Test(priority = 3)
+    @Test(priority = 3, suiteName = "Smoke")
     public void test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword(){
 
         LoginPage loginPage = new LoginPage(webDriver);
@@ -73,7 +74,7 @@ public class LoginTests extends BaseTest {
      * an error message telling "Warning: No match for E-Mail Address and/or Password".
      * */
 
-    @Test(priority = 4)
+    @Test(priority = 4, suiteName = "Smoke")
     public void test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername(){
 
         LoginPage loginPage = new LoginPage(webDriver);
@@ -86,7 +87,7 @@ public class LoginTests extends BaseTest {
      * an error message telling "Warning: No match for E-Mail Address and/or Password".
      * */
 
-    @Test(priority = 5)
+    @Test(priority = 5, suiteName = "Smoke")
     public void test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername(){
 
         LoginPage loginPage = new LoginPage(webDriver);
@@ -99,7 +100,7 @@ public class LoginTests extends BaseTest {
      * an error message telling "Warning: No match for E-Mail Address and/or Password".
      * */
 
-    @Test(priority = 6)
+    @Test(priority = 6, suiteName = "Smoke")
     public void test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword(){
 
         LoginPage loginPage = new LoginPage(webDriver);
@@ -113,7 +114,7 @@ public class LoginTests extends BaseTest {
      * an error message telling "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.".
      * */
 
-    @Test(priority = 7)
+    @Test(priority = 7, suiteName = "Regression")
     public void test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes(){
 
         LoginPage loginPage = new LoginPage(webDriver);
