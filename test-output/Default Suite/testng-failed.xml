@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default Suite]">
+  <test parallel="none" name="opencart1(failed)">
+    <classes>
+      <class name="login.LoginTests">
+        <methods>
+          <include name="test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- login.LoginTests -->
+    </classes>
+  </test> <!-- opencart1(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
