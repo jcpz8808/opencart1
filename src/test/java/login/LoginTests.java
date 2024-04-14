@@ -116,7 +116,7 @@ public class LoginTests extends BaseTest {
     @Test(priority = 7)
     public void test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes(){
 
-        LoginPage loginPage = new LoginPage(webDriver);ESTE SI Q ES
+        LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertEquals(loginPage.loginCustomer("jcpz8po808@gmail.comlo", "1263456"), "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.", "Error in the expected message for wrong login");
         loginPage.takeScreenShot("test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes");
     }
