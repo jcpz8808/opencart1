@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Default_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="login.LoginTests" class="method navigator-link" hash-for-method="test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword">test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_Suite" title="login.LoginTests" class="method navigator-link" hash-for-method="test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes">test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_Suite -->
@@ -125,6 +125,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="login.LoginTests" class="method navigator-link" hash-for-method="test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword">test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_Suite" title="login.LoginTests" class="method navigator-link" hash-for-method="test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername">test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -136,11 +141,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_Suite" title="login.LoginTests" class="method navigator-link" hash-for-method="test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword">test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="login.LoginTests" class="method navigator-link" hash-for-method="test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes">test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_Suite -->
@@ -163,11 +163,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword">
-                  </a> <!-- test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword -->
-                  <span class="method-name">test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword</span>
-                  <div class="stack-trace">java.lang.AssertionError: Error in the expected message for wrong login expected [Warning: No match for E-Mail Address and/or Password.] but found [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.]
-	at login.LoginTests.test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword(LoginTests.java:67)
+                  <a name="test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes">
+                  </a> <!-- test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes -->
+                  <span class="method-name">test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes</span>
+                  <div class="stack-trace">java.lang.AssertionError: Error in the expected message for wrong login expected [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.] but found [Warning: No match for E-Mail Address and/or Password.]
+	at login.LoginTests.test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes(LoginTests.java:121)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 ... Removed 23 stack frames
@@ -198,6 +198,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword">
+                  </a> <!-- test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword -->
+                  <span class="method-name">test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername">
                   </a> <!-- test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername -->
                   <span class="method-name">test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername</span>
@@ -215,13 +222,6 @@
                   <a name="test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword">
                   </a> <!-- test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword -->
                   <span class="method-name">test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes">
-                  </a> <!-- test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes -->
-                  <span class="method-name">test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -282,36 +282,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test02ExpectedLoginPageWhenBrowserBackButtonAfterLogout')
 data.setCell(0, 2, 'login.LoginTests')
-data.setCell(0, 3, 2083);
+data.setCell(0, 3, 3528);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test01LoginCustomerSuccessfully')
 data.setCell(1, 2, 'login.LoginTests')
-data.setCell(1, 3, 1208);
+data.setCell(1, 3, 1864);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername')
+data.setCell(2, 1, 'test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword')
 data.setCell(2, 2, 'login.LoginTests')
-data.setCell(2, 3, 955);
+data.setCell(2, 3, 1221);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword')
+data.setCell(3, 1, 'test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername')
 data.setCell(3, 2, 'login.LoginTests')
-data.setCell(3, 3, 934);
+data.setCell(3, 3, 1181);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername')
 data.setCell(4, 2, 'login.LoginTests')
-data.setCell(4, 3, 921);
+data.setCell(4, 3, 1167);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes')
+data.setCell(5, 1, 'test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword')
 data.setCell(5, 2, 'login.LoginTests')
-data.setCell(5, 3, 914);
+data.setCell(5, 3, 1163);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword')
+data.setCell(6, 1, 'test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes')
 data.setCell(6, 2, 'login.LoginTests')
-data.setCell(6, 3, 640);
+data.setCell(6, 3, 784);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -344,85 +344,85 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test01LoginCustomerSuccessfully</span>
-                <span class="method-start">4947 ms</span>
+                <span class="method-start">7061 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6156 ms</span>
+                <span class="method-start">8959 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">6448 ms</span>
+                <span class="method-start">9326 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test02ExpectedLoginPageWhenBrowserBackButtonAfterLogout</span>
-                <span class="method-start">10506 ms</span>
+                <span class="method-start">14272 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12590 ms</span>
+                <span class="method-start">17808 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">12798 ms</span>
+                <span class="method-start">18212 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword</span>
+                <span class="method-start">24418 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25646 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">25972 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername</span>
+                <span class="method-start">31103 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32276 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32479 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername</span>
+                <span class="method-start">39019 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40208 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">40499 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword</span>
+                <span class="method-start">45627 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">46798 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">47020 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword</span>
-                <span class="method-start">17484 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">18128 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">18342 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername</span>
-                <span class="method-start">22116 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">23037 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">23229 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername</span>
-                <span class="method-start">27990 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">28945 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">29142 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword</span>
-                <span class="method-start">32263 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">33198 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">33415 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes</span>
-                <span class="method-start">38114 ms</span>
+                <span class="method-start">52367 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">39029 ms</span>
+                <span class="method-start">53165 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

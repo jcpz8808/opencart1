@@ -5,9 +5,9 @@
     <classes>
       <class name="login.LoginTests">
         <methods>
-          <include name="test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes"/>
         </methods>
       </class> <!-- login.LoginTests -->
     </classes>

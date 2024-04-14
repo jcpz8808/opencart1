@@ -2,51 +2,99 @@
 <testng-results total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-14T05:01:09Z" name="Default Suite" finished-at="2024-04-14T05:01:48Z" duration-ms="39230">
+  <suite started-at="2024-04-14T13:58:15Z" name="Default Suite" finished-at="2024-04-14T13:59:08Z" duration-ms="53465">
     <groups>
     </groups>
-    <test started-at="2024-04-14T05:01:09Z" name="opencart1" finished-at="2024-04-14T05:01:48Z" duration-ms="39230">
+    <test started-at="2024-04-14T13:58:15Z" name="opencart1" finished-at="2024-04-14T13:59:08Z" duration-ms="53465">
       <class name="login.LoginTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:09Z" name="setUp" finished-at="2024-04-14T02:01:14Z" duration-ms="4947" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:15Z" name="setUp" finished-at="2024-04-14T10:58:22Z" duration-ms="7060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test01LoginCustomerSuccessfully()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:14Z" name="test01LoginCustomerSuccessfully" finished-at="2024-04-14T02:01:15Z" duration-ms="1208" status="PASS">
+        <test-method signature="test01LoginCustomerSuccessfully()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:22Z" name="test01LoginCustomerSuccessfully" finished-at="2024-04-14T10:58:24Z" duration-ms="1864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test01LoginCustomerSuccessfully -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:15Z" name="tearDown" finished-at="2024-04-14T02:01:15Z" duration-ms="291" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:24Z" name="tearDown" finished-at="2024-04-14T10:58:24Z" duration-ms="367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:15Z" name="setUp" finished-at="2024-04-14T02:01:20Z" duration-ms="4057" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:24Z" name="setUp" finished-at="2024-04-14T10:58:29Z" duration-ms="4946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test02ExpectedLoginPageWhenBrowserBackButtonAfterLogout()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:20Z" name="test02ExpectedLoginPageWhenBrowserBackButtonAfterLogout" finished-at="2024-04-14T02:01:22Z" duration-ms="2083" status="PASS">
+        <test-method signature="test02ExpectedLoginPageWhenBrowserBackButtonAfterLogout()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:29Z" name="test02ExpectedLoginPageWhenBrowserBackButtonAfterLogout" finished-at="2024-04-14T10:58:32Z" duration-ms="3528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test02ExpectedLoginPageWhenBrowserBackButtonAfterLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:22Z" name="tearDown" finished-at="2024-04-14T02:01:22Z" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:32Z" name="tearDown" finished-at="2024-04-14T10:58:33Z" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:22Z" name="setUp" finished-at="2024-04-14T02:01:26Z" duration-ms="4686" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:33Z" name="setUp" finished-at="2024-04-14T10:58:39Z" duration-ms="6204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:26Z" name="test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword" finished-at="2024-04-14T02:01:27Z" duration-ms="640" status="FAIL">
+        <test-method signature="test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:39Z" name="test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword" finished-at="2024-04-14T10:58:40Z" duration-ms="1221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:40Z" name="tearDown" finished-at="2024-04-14T10:58:41Z" duration-ms="325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:41Z" name="setUp" finished-at="2024-04-14T10:58:46Z" duration-ms="5131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:46Z" name="test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername" finished-at="2024-04-14T10:58:47Z" duration-ms="1167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:47Z" name="tearDown" finished-at="2024-04-14T10:58:47Z" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:47Z" name="setUp" finished-at="2024-04-14T10:58:54Z" duration-ms="6540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:54Z" name="test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername" finished-at="2024-04-14T10:58:55Z" duration-ms="1181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:55Z" name="tearDown" finished-at="2024-04-14T10:58:55Z" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:58:55Z" name="setUp" finished-at="2024-04-14T10:59:00Z" duration-ms="5128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:59:00Z" name="test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword" finished-at="2024-04-14T10:59:01Z" duration-ms="1163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:59:01Z" name="tearDown" finished-at="2024-04-14T10:59:02Z" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:59:02Z" name="setUp" finished-at="2024-04-14T10:59:07Z" duration-ms="5347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:59:07Z" name="test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes" finished-at="2024-04-14T10:59:08Z" duration-ms="784" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Error in the expected message for wrong login expected [Warning: No match for E-Mail Address and/or Password.] but found [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.]]]>
+              <![CDATA[Error in the expected message for wrong login expected [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.] but found [Warning: No match for E-Mail Address and/or Password.]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error in the expected message for wrong login expected [Warning: No match for E-Mail Address and/or Password.] but found [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.]
+              <![CDATA[java.lang.AssertionError: Error in the expected message for wrong login expected [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.] but found [Warning: No match for E-Mail Address and/or Password.]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:176)
-	at login.LoginTests.test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword(LoginTests.java:67)
+	at login.LoginTests.test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes(LoginTests.java:121)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
@@ -73,56 +121,8 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:27Z" name="tearDown" finished-at="2024-04-14T02:01:27Z" duration-ms="214" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:27Z" name="setUp" finished-at="2024-04-14T02:01:31Z" duration-ms="3774" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:31Z" name="test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername" finished-at="2024-04-14T02:01:32Z" duration-ms="921" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:32Z" name="tearDown" finished-at="2024-04-14T02:01:32Z" duration-ms="191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:32Z" name="setUp" finished-at="2024-04-14T02:01:37Z" duration-ms="4761" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:37Z" name="test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername" finished-at="2024-04-14T02:01:38Z" duration-ms="955" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:38Z" name="tearDown" finished-at="2024-04-14T02:01:38Z" duration-ms="197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:38Z" name="setUp" finished-at="2024-04-14T02:01:41Z" duration-ms="3121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:41Z" name="test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword" finished-at="2024-04-14T02:01:42Z" duration-ms="934" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:42Z" name="tearDown" finished-at="2024-04-14T02:01:42Z" duration-ms="216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:42Z" name="setUp" finished-at="2024-04-14T02:01:47Z" duration-ms="4699" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:47Z" name="test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes" finished-at="2024-04-14T02:01:48Z" duration-ms="914" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@6497b078]" started-at="2024-04-14T02:01:48Z" name="tearDown" finished-at="2024-04-14T02:01:48Z" duration-ms="192" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@4f74980d]" started-at="2024-04-14T10:59:08Z" name="tearDown" finished-at="2024-04-14T10:59:08Z" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
