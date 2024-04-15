@@ -122,9 +122,8 @@ public class LoginTests extends BaseTest {
         loginPage.takeScreenShot("test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes");
     }
 
-    /* Test case 07: Login incorrectly multiple times(Negative test case)
-     * Given the customer email and the wrong password when the user complete de login form and clic en login then get
-     * an error message telling "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.".
+    /* Test case 08: Login components are visible
+     * When the user enters to the login address then he will see all the components for the login.
      * */
 
     @Test(priority = 0, suiteName = "Smoke")
@@ -135,5 +134,20 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(loginPage.LoginPasswordComponentVisible(), true, "Error in the password component is not visible");
         Assert.assertEquals(loginPage.LoginSubmitComponentVisible(), true, "Error in the login submit button component is not visible");
         loginPage.takeScreenShot("test08AllLoginComponentsAreVisible");
+    }
+
+    /* Test case 08: Login incorrectly multiple times(Negative test case) EREASE
+     * Given the customer email and the wrong password when the user complete de login form and clic en login then get
+     * an error message telling "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.".
+     * */
+
+    @Test(priority = 8, suiteName = "Smoke")
+    public void test09JustTestingJenkins(){
+
+        LoginPage loginPage = new LoginPage(webDriver);
+        Assert.assertEquals(loginPage.LoginEmailComponentVisible(), true, "Error in the email component is not visible");
+        Assert.assertEquals(loginPage.LoginPasswordComponentVisible(), true, "Error in the password component is not visible");
+        Assert.assertEquals(loginPage.LoginSubmitComponentVisible(), true, "Error in the login submit button component is not visible");
+        loginPage.takeScreenShot("test09JustTestingJenkins");
     }
 }
