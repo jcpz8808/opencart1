@@ -165,4 +165,19 @@ public class LoginTests extends BaseTest {
             Assert.assertEquals(loginPage.LoginSubmitComponentVisible(), true, "Error in the login submit button component is not visible");
             loginPage.takeScreenShot("test09JustTestingJenkins");
         }
+        
+        /* Test case 011: Login incorrectly multiple times(Negative test case) EREASE EREASE EREASE
+                 * Given the customer email and the wrong password when the user complete de login form and clic en login then get
+                 * an error message telling "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.".
+                 * */
+            
+                @Test(priority = 11, suiteName = "Smoke")
+                public void test11JustTestingJenkinsAgainPart2ERESAYESYES(){
+            
+                    LoginPage loginPage = new LoginPage(webDriver);
+                    Assert.assertEquals(loginPage.LoginEmailComponentVisible(), true, "Error in the email component is not visible");
+                    Assert.assertEquals(loginPage.LoginPasswordComponentVisible(), true, "Error in the password component is not visible");
+                    Assert.assertEquals(loginPage.LoginSubmitComponentVisible(), true, "Error in the login submit button component is not visible");
+                    loginPage.takeScreenShot("test09JustTestingJenkins");
+                }
 }
