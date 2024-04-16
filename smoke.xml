@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="smoke"><test verbose="1" preserve-order="true" name="C:/Users/josecarlos.perezzamo/IdeaProjects/opencart1">
+    <classes><class name="login.LoginTests"><methods>
+        <include name="test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword"/>
+        <include name="test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername"/>
+        <include name="test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername"/>
+        <include name="test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword"/>
+        <include name="test08AllLoginComponentsAreVisible"/><include name="test09JustTestingJenkins"/>
+        <include name="test10JustTestingJenkinsAgainPart2"/><include name="test11JustTestingJenkinsAgainPart2ERESAYESYES"/>
+        <include name="test12JustTestingJenkinsAgainPart2ERESAYESYES"/></methods></class></classes></test></suite>
