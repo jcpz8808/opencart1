@@ -1,22 +1,18 @@
 package login;
 
 import base.BaseTest;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.experimental.categories.Category;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import pages.FeaturedPage;
 import pages.LoginPage;
 
 public class LoginTests extends BaseTest {
-
-    //@BeforeTest
-    /*public void setUp(){
-        System.setProperty("webdriver.chrome.driver","resources/chromedriver.exe");
-        webDriver = new ChromeDriver();
-        webDriver.get("https://opencart.abstracta.us/index.php?route=account/login");
-        //webDriver.manage().window().maximize();
-    }*/
-
-
 
     /* Test case 01: Login correctly (Possitive test case)
     * Given the customer email and password when the user complete correctly de login form then get to My account page
@@ -24,8 +20,8 @@ public class LoginTests extends BaseTest {
 
    @Test(priority = 1, suiteName = "Regression")
     public void test01LoginCustomerSuccessfully(){
-
-        LoginPage loginPage = new LoginPage(webDriver);
+        loginPage.logoutCustomer();
+        webDriver.navigate().to("https://opencart.abstracta.us/index.php?route=account/login");
         Assert.assertEquals(loginPage.loginCustomer("jcpz8808@gmail.com", "password"), "Login successfully", "Error: the login failed");
         loginPage.takeScreenShot("test01LoginCustomerSuccessfully");
    }
@@ -39,7 +35,6 @@ public class LoginTests extends BaseTest {
     public void test02ExpectedLoginPageWhenBrowserBackButtonAfterLogout(){
 
         //Given the customer is logged
-        LoginPage loginPage = new LoginPage(webDriver);
         loginPage.loginCustomer("jcpz8808@gmail.com", "password");
 
         //When the customer logout
@@ -64,7 +59,6 @@ public class LoginTests extends BaseTest {
     @Test(priority = 3, suiteName = "Smoke")
     public void test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword(){
 
-        LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertEquals(loginPage.loginCustomer("jcpz8808@gmail.comlo", "123456"), "Warning: No match for E-Mail Address and/or Password.", "Error in the expected message for wrong login");
         loginPage.takeScreenShot("test03ExpectedWarningMessageWhenLoginCustomerWithInvalidPassword");
     }
@@ -77,7 +71,6 @@ public class LoginTests extends BaseTest {
     @Test(priority = 4, suiteName = "Smoke")
     public void test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername(){
 
-        LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertEquals(loginPage.loginCustomer("jcpz8808658@gmail.comlo", "password"), "Warning: No match for E-Mail Address and/or Password.", "Error in the expected message for wrong login");
         loginPage.takeScreenShot("test04ExpectedWarningMessageWhenLoginCustomerWithInvalidUsername");
     }
@@ -90,7 +83,6 @@ public class LoginTests extends BaseTest {
     @Test(priority = 5, suiteName = "Smoke")
     public void test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername(){
 
-        LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertEquals(loginPage.loginCustomer("", "password"), "Warning: No match for E-Mail Address and/or Password.", "Error in the expected message for wrong login");
         loginPage.takeScreenShot("test05ExpectedWarningMessageWhenLoginCustomerWithEmptyUsername");
     }
@@ -103,7 +95,6 @@ public class LoginTests extends BaseTest {
     @Test(priority = 6, suiteName = "Smoke")
     public void test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword(){
 
-        LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertEquals(loginPage.loginCustomer("jcpz8808@gmail.com", ""), "Warning: No match for E-Mail Address and/or Password.", "Error in the expected message for wrong login");
         loginPage.takeScreenShot("test06ExpectedWarningMessageWhenLoginCustomerWithEmptyPassword");
     }
@@ -117,7 +108,6 @@ public class LoginTests extends BaseTest {
     @Test(priority = 7, suiteName = "Regression")
     public void test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes(){
 
-        LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertEquals(loginPage.loginCustomer("jcpz8po808@gmail.comlo", "1263456"), "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.", "Error in the expected message for wrong login");
         loginPage.takeScreenShot("test07ExpectedWarningMessageWhenLoginCustomerWithInvalidCredentialsMultipleTimes");
     }
@@ -129,7 +119,6 @@ public class LoginTests extends BaseTest {
     @Test(priority = 0, suiteName = "Smoke")
     public void test08AllLoginComponentsAreVisible(){
 
-        LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertEquals(loginPage.LoginEmailComponentVisible(), true, "Error in the email component is not visible");
         Assert.assertEquals(loginPage.LoginPasswordComponentVisible(), true, "Error in the password component is not visible");
         Assert.assertEquals(loginPage.LoginSubmitComponentVisible(), true, "Error in the login submit button component is not visible");
