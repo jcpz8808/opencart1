@@ -20,15 +20,12 @@ public class BaseTest {
         webDriver.manage().window().maximize();
         loginPage = new LoginPage(webDriver);
         featuredPage = new FeaturedPage(webDriver);
-        loginPage.loginCustomer("jcpz8808@gmail.com", "password");
-
-
         //webDriver.get("http://opencart.abstracta.us/");
     }
     @AfterMethod
     public void tearDown(){
         if (webDriver!=null){
-            //webDriver.quit();
+            webDriver.quit();
         }
     }
 }

@@ -20,15 +20,19 @@ public class LoginPage extends BasePage{
     */
 
     public boolean LoginEmailComponentVisible(){
+        webDriver.navigate().to("https://opencart.abstracta.us/index.php?route=account/login");
         return webDriver.findElement(emailInput).isDisplayed();
     }
     public boolean LoginPasswordComponentVisible(){
+        webDriver.navigate().to("https://opencart.abstracta.us/index.php?route=account/login");
         return webDriver.findElement(passwordInput).isDisplayed();
     }
     public boolean LoginSubmitComponentVisible(){
+        webDriver.navigate().to("https://opencart.abstracta.us/index.php?route=account/login");
         return webDriver.findElement(loginSubmit).isDisplayed();
     }
    public String loginCustomer(String user, String pass){
+       webDriver.navigate().to("https://opencart.abstracta.us/index.php?route=account/login");
        webDriver.findElement(emailInput).sendKeys(user);
        webDriver.findElement(passwordInput).sendKeys(pass);
        webDriver.findElement(loginSubmit).click();

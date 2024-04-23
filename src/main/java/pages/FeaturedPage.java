@@ -10,7 +10,6 @@ public class FeaturedPage extends BasePage{
 
    private List<WebElement> elements;
    private List<WebElement> cartButton;
-   private List<WebElement> pricetag;
    private WebElement messageAlert;
 
     public FeaturedPage(WebDriver webDriver){

@@ -20,7 +20,6 @@ public class LoginTests extends BaseTest {
 
    @Test(priority = 1, suiteName = "Regression")
     public void test01LoginCustomerSuccessfully(){
-        loginPage.logoutCustomer();
         webDriver.navigate().to("https://opencart.abstracta.us/index.php?route=account/login");
         Assert.assertEquals(loginPage.loginCustomer("jcpz8808@gmail.com", "password"), "Login successfully", "Error: the login failed");
         loginPage.takeScreenShot("test01LoginCustomerSuccessfully");
@@ -120,7 +119,6 @@ public class LoginTests extends BaseTest {
 
     @Test(priority = 0, suiteName = "Smoke")
     public void test08AllLoginComponentsAreVisible(){
-
         Assert.assertEquals(loginPage.LoginEmailComponentVisible(), true, "Error in the email component is not visible");
         Assert.assertEquals(loginPage.LoginPasswordComponentVisible(), true, "Error in the password component is not visible");
         Assert.assertEquals(loginPage.LoginSubmitComponentVisible(), true, "Error in the login submit button component is not visible");
