@@ -11,6 +11,7 @@ import java.io.IOException;
 public abstract class BasePage {
 
     protected WebDriver webDriver;
+
     public BasePage(WebDriver webDriver){
         this.webDriver = webDriver;
     }
