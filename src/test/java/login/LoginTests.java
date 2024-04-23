@@ -24,6 +24,8 @@ public class LoginTests extends BaseTest {
         webDriver.navigate().to("https://opencart.abstracta.us/index.php?route=account/login");
         Assert.assertEquals(loginPage.loginCustomer("jcpz8808@gmail.com", "password"), "Login successfully", "Error: the login failed");
         loginPage.takeScreenShot("test01LoginCustomerSuccessfully");
+        loginPage.logoutCustomer();
+
    }
 
     /* Test case 02: Try to navegate after the customer had logged out (Negative test case)
