@@ -1,16 +1,13 @@
 package login;
 
 import base.BaseTest;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.experimental.categories.Category;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pages.FeaturedPage;
-import pages.LoginPage;
+import us.abstracta.jmeter.javadsl.core.TestPlanStats;
+import static org.assertj.core.api.Assertions.assertThat;
+import static us.abstracta.jmeter.javadsl.JmeterDsl.*;
+import java.io.IOException;
+import java.time.Duration;
 
 public class LoginTests extends BaseTest {
 
@@ -123,5 +120,18 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(loginPage.LoginPasswordComponentVisible(), true, "Error in the password component is not visible");
         Assert.assertEquals(loginPage.LoginSubmitComponentVisible(), true, "Error in the login submit button component is not visible");
         loginPage.takeScreenShot("test08AllLoginComponentsAreVisible");
+    }
+
+    /* Test case 09: Performance
+     * given the login adress When the user access it then it should open in less than 5 seconds.
+     * */
+    @Test(priority = 0, suiteName = "Smoke")
+    public void test09PreformanceExecutationTimeUnder() throws IOException {
+        TestPlanStats stats = testPlan(
+                threadGroup(2, 10,
+                        httpSampler("https://opencart.abstracta.us/index.php?route=account/login")
+                )
+        ).run();
+        assertThat(stats.overall().sampleTimePercentile99()).isLessThan(Duration.ofSeconds(5));
     }
 }
